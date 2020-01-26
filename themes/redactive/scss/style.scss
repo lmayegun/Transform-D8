@@ -1,0 +1,157 @@
+
+
+// roboto plus slab
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+
+// zilla slab - 'Zilla Slab'
+@import url('https://fonts.googleapis.com/css?family=Zilla+Slab:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap');
+
+// maitree - 'Maitree'
+@import url('https://fonts.googleapis.com/css?family=Maitree:200,300,400,500,600,700&display=swap');
+
+// noto serif - 'Noto Serif'
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i&display=swap');
+
+// aleo
+@import url('https://fonts.googleapis.com/css?family=Aleo:300,300i,400,400i,700,700i&display=swap');
+
+// CORE FONTS
+$fontStackBody: 'Roboto', sans-serif;
+$fontStackAlt: 'Aleo', serif;
+$fontStackUI: 'Roboto', serif;
+
+
+// BODY TEXT
+$bodyTextColor: #999;
+$bodySize: 1rem;
+$bodyLineHeight: 1.8em;
+
+
+// BREAKPOINTS
+$breakpointTablet: 760px;
+$breakpointDesktop: 1020px;
+$breakpointWidescreen: 1250px;
+
+
+// GUTTER & WIDTHS
+$maxPageWidth: 1600px;
+$gutter: 1rem;
+$mastheadSideregionWidths: 20px;
+
+
+// LINK STYLES
+$linkColor: #009CA9;
+$linkHoverColor: #FF6600;
+$highlightColor: #FF6600;
+
+
+// BUTTON STYLES
+$buttonColor: $linkColor;
+$buttonHoverColor: $linkHoverColor;
+$buttonTextColor: white;
+$buttonTransitionTime: 0.5s;
+$buttonHeight: 4rem;
+$buttonBorderColor: white;
+$buttonBorderWidth: 2px;
+
+
+// TEASERS
+
+// Hero panels
+$heroPanelTextback: #0076FF;
+$heroPanelTextColor: white;
+$heroPanelBorderColor: transparent;
+$heroPanelHeadColor: white;
+$heroPanelHeadingSize: 2rem;
+$heroPanelHeadingLineHeight: 1.1em;
+
+// core teaser styles
+$teaserheadingColor: #444;
+$teaserFontWeight: bold;
+$teaserHeadingSize: 1.25rem;
+$teaserHeadingLineHeight: 1.2em;
+$teaserBodySize: 1rem;
+$teaserBodyLineHeight: 1.4em;
+$teaserpanelBackgroundColor: white;
+$teaserImageWidthRegular: 9rem;
+$teaserImageHeightRegular: 9rem;
+$teaserImageWidthSmall: 5rem;
+$teaserImageHeightSmall: 5rem;
+$teaserBorderColor:  #ccc;
+$teaserInset: $gutter;
+
+// remove these when grid re-implemented...
+$pageColumnCount: 4;
+$columnWidth: (1 / $pageColumnCount) * 100%;
+
+@import "variables";
+@import "grid";
+@import "reset";
+@import "page_structure";
+@import "admin_ui";
+@import "content_structure";
+@import "node_styles";
+@import "teasers";
+
+.noteToSelf {
+    background: #FFcc00;
+    padding: $gutter * 2;
+    font-size: 1.5em;
+    margin: 2rem 0;
+    transform: rotate(-2deg);
+}
+
+.views-element-container {
+    // margin-bottom: 4rem;
+}
+
+body, p {
+    font-size: $bodySize;
+    line-height: $bodyLineHeight;
+}
+
+h1 {
+    font-family: $fontStackAlt;
+    font-size: 3.8rem;
+    letter-spacing: -0.01em;
+    font-weight: normal;
+    line-height: 1.1em;
+}
+
+h2 {
+    font-family: $fontStackAlt;
+    font-size: 2.6rem;
+    letter-spacing: -0.01em;
+    font-weight: normal;
+    line-height: 1.1em;
+}
+
+h3 {
+    font-family: $fontStackAlt;
+    font-size: 1.5rem;
+    letter-spacing: -0.01em;
+    font-weight: bold;
+    line-height: 1.1em;
+}
+
+
+h4 {
+    font-family: $fontStackAlt;
+    font-size: 1.2rem;
+    letter-spacing: -0.01em;
+    font-weight: bold;
+    line-height: 1.1em;
+}
+
+body {
+    font-family: $fontStackBody;
+    background: $primary-color;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: $fontStackAlt;
+}
+
+a {
+    color: $linkColor;
+}

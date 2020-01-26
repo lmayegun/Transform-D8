@@ -1,0 +1,145 @@
+{#
+/**
+* @file
+* Theme override to display a single page.
+*
+* The doctype, html, head and body tags are not in this template. Instead they
+* can be found in the html.html.twig template in this directory.
+*
+* Available variables:
+*
+* General utility variables:
+* - base_path: The base URL path of the Drupal installation. Will usually be
+*   "/" unless you have installed Drupal in a sub-directory.
+* - is_front: A flag indicating if the current page is the front page.
+* - logged_in: A flag indicating if the user is registered and signed in.
+* - is_admin: A flag indicating if the user has permission to access
+*   administration pages.
+*
+* Site identity:
+* - front_page: The URL of the front page. Use this instead of base_path when
+*   linking to the front page. This includes the language domain or prefix.
+*
+* Page content (in order of occurrence in the default page.html.twig):
+* - messages: Status and error messages. Should be displayed prominently.
+* - node: Fully loaded node, if there is an automatically-loaded node
+*   associated with the page and the node ID is the second argument in the
+*   page's path (e.g. node/12345 and node/12345/revisions, but not
+*   comment/reply/12345).
+*
+*
+* @see template_preprocess_page()
+* @see html.html.twig
+*/
+#}
+
+<div id="pageWrapper" class="{% if page.sidebar %}hasSidebar{% endif %}">
+  <div class="navbar-wrapper">
+    {% if page.pre_header %}
+      <div id="pre_masthead">
+        {{ page.pre_header }}
+      </div>
+    {% endif %}
+
+    <header id="masthead" class="row">
+      {% if page.masthead_left %}
+          <div id="masthead_left" class="hidden-xs hidden-sm hidden-md col-md-4">
+            {{ page.masthead_left }}
+          </div>
+      {% endif %}
+
+      <div id="masthead_centre" class="col-xs-9 col-md-5 logo-wrapper">
+        {% if page.masthead_centre %}
+          {{ page.masthead_centre }}
+        {% endif %}
+      </div>
+
+
+      {% if page.masthead_right %}
+        <div id="masthead_right" class="col-sm-12 col-md-3 hidden-xs hidden-sm hidden-md">
+          {{ page.masthead_right }}
+        </div>
+      {% endif %}
+    </header>
+
+    <div id="navigation">
+
+      <header id="navbar" role="banner"class="hidden-xs hidden-sm hidden-md navbar container navbar-default">
+        <div class="container main">
+          <ul class="links">
+            {% for menu in main_menu %}
+              <li>
+                <a href={{ menu.url }}> {{menu.title}} </a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </header>
+
+      {% if page.navigation %}
+        {{ page.navigation }}
+      {% endif %}
+    </div>
+  </div>
+
+  <main role="main" id="content_area">
+    {% if page.breadcrumb %}
+        <div id="breadcrumb_wrapper">
+          {{ page.breadcrumb }}
+        </div>
+    {% endif %}
+
+    <div class="noteToSelf">
+        Note: need to work out how to override custom block types with twig - eg: create a re-useable ad panel block with fields but have one template theme all instances.
+    </div>
+
+    <div id="content_section">
+      {% if page.pre_content %}
+          <div id="pre_content">
+            {{ page.pre_content }}
+          </div>
+      {% endif %}
+
+      <div id="main_content">
+          <article id="content">
+            {{ page.highlighted }}
+            {{ page.help }}
+            {{ page.content }}
+          </article>
+
+          {% if page.sidebar %}
+            <aside id="content_sidebar" role="complementary">
+              <div style="padding: 0 0.5rem 0rem 0.5rem; margin: 0px !important;">
+                  <img src="/themes/redactive/img/MoodysAnalytics.jpg" style="width: 100%; height: auto; max-width: 850px;">
+              </div>
+              {{ page.sidebar }}
+            </aside>
+          {% endif %}
+        </div>
+
+      {% if page.post_content %}
+        <div id="post_content">
+          {{ page.post_content }}
+        </div>
+      {% endif %}
+    </div>
+
+    {% if page.page_end_call_to_actions %}
+        <div id="page_end_area">
+          {{ page.page_end_call_to_actions }}
+        </div>
+    {% endif %}
+  </main>
+
+  <footer id="page_footer">
+      {% if page.footer %}
+              {{ page.footer }}
+      {% endif %}
+  </footer>
+
+  {% if page.post_footer %}
+      <div id="post_footer">
+          {{ page.post_footer }}
+      </div>
+  {% endif %}
+</div>

@@ -1,0 +1,8 @@
+uuid: 7ab15d58-8cb6-45fe-b3f8-f75b5c9aafee
+langcode: en
+status: true
+dependencies: {  }
+name: 'Primary vocabulary'
+vid: primary_vocabulary
+description: 'primary_vocabulary vocabulary'
+weight: 0

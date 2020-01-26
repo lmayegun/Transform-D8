@@ -1,0 +1,19 @@
+  .editorialContentPage {
+    padding: $gutter /2;
+    .page_mainimage_wrapper {
+      position: relative;
+      img {
+        width: 100% !important;
+        height: auto !important;
+      }
+      .page_mainimage_caption {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        width: 25%;
+        padding: $gutter;
+        color: white;
+        background: black;
+      }
+    }
+ }

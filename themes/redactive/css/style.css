@@ -1,0 +1,1662 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Zilla+Slab:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Maitree:200,300,400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Aleo:300,300i,400,400i,700,700i&display=swap");
+/* line 4, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+#pre_masthead {
+  text-align: center;
+}
+
+/* line 8, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+#masthead {
+  display: flex !important;
+  flex-direction: row;
+}
+
+/* line 13, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+#masthead_left, #masthead_right {
+  width: 20px;
+  flex-grow: 0;
+}
+
+/* line 18, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+#masthead_centre {
+  flex-grow: 1;
+}
+
+/* line 25, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+article#content, #main_content {
+  flex-direction: column !important;
+  display: block !important;
+}
+
+@media only screen and (min-width: 1020px) {
+  /* line 31, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+  article#content, #main_content {
+    display: flex !important;
+    flex-direction: row !important;
+  }
+}
+
+/* line 37, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+#main_content {
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 48, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+.page-wrapper {
+  background: #fff;
+}
+
+/* line 52, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+#pageWrapper {
+  width: 100%;
+  max-width: 1600px !important;
+  margin: 0 auto;
+  padding: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* line 59, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0px !important;
+}
+
+/* line 66, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+.row.fullWidth {
+  width: 100%;
+}
+
+/* line 71, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+.row .column {
+  width: 100%;
+}
+
+/* line 72, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+.row .column.double {
+  width: 100%;
+}
+
+/* line 73, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+.sidebar {
+  width: 100%;
+}
+
+/* line 74, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+.column_inner {
+  width: 0.5rem;
+}
+
+/* line 76, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+.column {
+  flex-shrink: 0;
+  width: 100%;
+  flex-basis: 100%;
+}
+
+/* line 82, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+article#content {
+  width: 100%;
+  flex-basis: 100%;
+  flex-shrink: 0;
+}
+
+/* line 87, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+#content_sidebar {
+  width: 100%;
+  flex-basis: 100%;
+  flex-shrink: 0;
+}
+
+/* line 89, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+#content_sidebar > * {
+  margin: 0.5rem;
+}
+
+@media only screen and (min-width: 760px) {
+  /* line 102, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+  .row {
+    width: 100%;
+    flex-basis: 100%;
+  }
+  /* line 103, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+  .row .column {
+    width: 50%;
+    flex-basis: 50%;
+  }
+  /* line 104, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+  .row .column.double {
+    width: 100%;
+    flex-basis: 100%;
+  }
+  /* line 105, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+  .sidebar {
+    width: 100%;
+    flex-basis: 100% !important;
+  }
+  /* line 106, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+  #content_sidebar {
+    width: 100% !important;
+    flex-basis: 100% !important;
+  }
+}
+
+@media only screen and (min-width: 1020px) {
+  /* line 114, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+  .row {
+    width: 100%;
+  }
+  /* line 115, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+  .row .column {
+    width: 33.333%;
+    flex-basis: 33.333%;
+  }
+  /* line 116, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+  .row .column.double {
+    width: 50%;
+    flex-basis: 50%;
+  }
+  /* line 117, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+  .sidebar {
+    width: 33.333%;
+    flex-basis: 33.333%;
+  }
+  /* line 118, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+  .row.fullWidth .column {
+    width: 33.333%;
+    flex-basis: 33.333%;
+  }
+  /* line 119, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+  .row.fullWidth .column.double {
+    width: 50%;
+    flex-basis: 50%;
+  }
+  /* line 120, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+  #content_sidebar {
+    width: 33.333% !important;
+    flex-basis: 33.333% !important;
+  }
+  /* line 123, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+  .hasSidebar .sidebar {
+    width: 33.333%;
+    flex-basis: 33.333%;
+  }
+  /* line 124, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+  .hasSidebar .row .column {
+    width: 50%;
+    flex-basis: 50%;
+  }
+  /* line 125, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+  .hasSidebar .row .column.double {
+    width: 100%;
+    flex-basis: 100%;
+  }
+  /* line 126, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+  .hasSidebar .row.fullWidth .column {
+    width: 33.333%;
+    flex-basis: 33.333%;
+  }
+  /* line 127, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+  .hasSidebar .row.fullWidth .column.double {
+    width: 50%;
+    flex-basis: 50%;
+  }
+  /* line 128, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+  .hasSidebar article#content {
+    width: 66.666%;
+    flex-basis: 66.666%;
+    flex-shrink: 0;
+  }
+  /* line 130, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+  .container {
+    width: 1260px;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  /* line 138, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+  .row {
+    width: 100%;
+    flex-basis: 100%;
+  }
+  /* line 139, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+  .row .column {
+    width: 25%;
+    flex-basis: 25%;
+  }
+  /* line 140, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+  .row .column.double {
+    width: 50%;
+    flex-basis: 50%;
+  }
+  /* line 141, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+  .row.fullWidth .column {
+    width: 25%;
+    flex-basis: 25%;
+  }
+  /* line 142, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+  .row.fullWidth .column.double {
+    width: 50%;
+    flex-basis: 50%;
+  }
+  /* line 143, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+  .sidebar {
+    width: 25%;
+    flex-basis: 25%;
+  }
+  /* line 144, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+  #content_sidebar {
+    width: 25% !important;
+    flex-basis: 25% !important;
+  }
+  /* line 147, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+  .hasSidebar .sidebar {
+    width: 25%;
+    flex-basis: 25%;
+  }
+  /* line 148, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+  .hasSidebar .row .column {
+    width: 33.333%;
+    flex-basis: 33.333%;
+  }
+  /* line 149, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+  .hasSidebar .row .column.double {
+    width: 50%;
+    flex-basis: 50%;
+  }
+  /* line 150, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+  .hasSidebar .row.fullWidth .column {
+    width: 25%;
+    flex-basis: 25%;
+  }
+  /* line 151, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+  .hasSidebar .row.fullWidth .column.double {
+    width: 50%;
+    flex-basis: 50%;
+  }
+  /* line 152, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+  .hasSidebar article#content {
+    width: 75%;
+    flex-basis: 75%;
+    flex-shrink: 0;
+  }
+}
+
+/* line 180, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+#page_footer {
+  padding: 0 0.5rem;
+}
+
+/* line 184, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+#page_footer > div {
+  padding: 1rem;
+  background: #666;
+  color: white;
+  display: flex !important;
+  flex-direction: row;
+}
+
+/* line 192, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+#page_footer > div > div {
+  width: 100%;
+}
+
+/* line 196, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_grid.scss */
+#post_footer {
+  margin: 0 0.5rem;
+  background: #222;
+  color: white;
+  padding: 1rem;
+}
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+/* line 11, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_reset.scss */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+     ========================================================================== */
+/**
+   * Remove the margin in all browsers.
+   */
+/* line 23, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_reset.scss */
+body {
+  margin: 0;
+}
+
+/**
+   * Render the `main` element consistently in IE.
+   */
+/* line 31, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_reset.scss */
+main {
+  display: block;
+}
+
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+/* line 40, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_reset.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+     ========================================================================== */
+/**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+/* line 53, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_reset.scss */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+/* line 64, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_reset.scss */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+     ========================================================================== */
+/**
+   * Remove the gray background on active links in IE 10.
+   */
+/* line 76, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_reset.scss */
+a {
+  background-color: transparent;
+}
+
+/**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+/* line 85, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_reset.scss */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+/* line 95, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_reset.scss */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+/* line 105, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_reset.scss */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+   * Add the correct font size in all browsers.
+   */
+/* line 116, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_reset.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+/* line 125, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_reset.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 133, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_reset.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 137, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_reset.scss */
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+     ========================================================================== */
+/**
+   * Remove the border on images inside links in IE 10.
+   */
+/* line 148, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_reset.scss */
+img {
+  border-style: none;
+}
+
+/* Forms
+     ========================================================================== */
+/**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+/* line 160, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_reset.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+/* line 176, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_reset.scss */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+/* line 186, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_reset.scss */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+/* line 195, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_reset.scss */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+   * Remove the inner border and padding in Firefox.
+   */
+/* line 206, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_reset.scss */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
+/* line 218, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_reset.scss */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+   * Correct the padding in Firefox.
+   */
+/* line 229, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_reset.scss */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+/* line 240, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_reset.scss */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+/* line 253, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_reset.scss */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+/* line 261, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_reset.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+/* line 270, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_reset.scss */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+/* line 280, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_reset.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+/* line 290, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_reset.scss */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+/* line 299, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_reset.scss */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+/* line 308, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_reset.scss */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+     ========================================================================== */
+/*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+/* line 320, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_reset.scss */
+details {
+  display: block;
+}
+
+/*
+   * Add the correct display in all browsers.
+   */
+/* line 328, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_reset.scss */
+summary {
+  display: list-item;
+}
+
+/* Misc
+     ========================================================================== */
+/**
+   * Add the correct display in IE 10+.
+   */
+/* line 339, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_reset.scss */
+template {
+  display: none;
+}
+
+/**
+   * Add the correct display in IE 10.
+   */
+/* line 347, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_reset.scss */
+[hidden] {
+  display: none;
+}
+
+/* line 4, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_admin_ui.scss */
+#block-tabs > ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* line 13, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_admin_ui.scss */
+#block-tabs > ul li {
+  flex-grow: 1;
+  flex-basis: 1;
+}
+
+/* line 18, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_admin_ui.scss */
+#block-tabs > ul li a {
+  display: block;
+  color: white !important;
+  padding: 0.5rem;
+  background: #009CA9;
+  color: white;
+  margin: 1rem 2px 1rem 0;
+  text-align: center;
+}
+
+/* line 28, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_admin_ui.scss */
+#block-tabs > ul li a.is-active {
+  background: #FF6600;
+}
+
+/* line 1, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_node_styles.scss */
+.editorialContentPage {
+  padding: 0.5rem;
+}
+
+/* line 3, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_node_styles.scss */
+.editorialContentPage .page_mainimage_wrapper {
+  position: relative;
+}
+
+/* line 5, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_node_styles.scss */
+.editorialContentPage .page_mainimage_wrapper img {
+  width: 100% !important;
+  height: auto !important;
+}
+
+/* line 9, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_node_styles.scss */
+.editorialContentPage .page_mainimage_wrapper .page_mainimage_caption {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 25%;
+  padding: 1rem;
+  color: white;
+  background: black;
+}
+
+/*
+$heroPanelBorderColor: transparent;
+$heroPanelHeadColor: white;
+$heroPanelHeadingSize: 2rem;
+$heroPanelHeadingLineHeight: 1em;
+*/
+/* line 21, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.heroTeasers div.teaser_wrapper {
+  position: relative;
+  overflow: hidden;
+  min-height: 30rem;
+  margin: 1rem 0 4rem 0;
+  width: 100% !important;
+  flex-basis: 100% !important;
+}
+
+/* line 32, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.heroTeasers .teaser_image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0.5rem;
+  right: 0.5rem;
+}
+
+/* line 40, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.heroTeasers .teaser_image .contextual-region {
+  position: static;
+}
+
+/* line 44, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.heroTeasers .teaser_image img {
+  width: 100%;
+  display: block;
+  height: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* line 55, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.heroTeasers .teaser_text_panel_outer {
+  position: absolute;
+  background: #0076FF;
+  color: white;
+  right: 0.5rem;
+  bottom: 0;
+  margin-left: 1rem;
+  border: 1px solid transparent;
+  width: 100%;
+}
+
+@media only screen and (min-width: 760px) {
+  /* line 67, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+  div.heroTeasers .teaser_text_panel_outer {
+    width: 50%;
+    width: calc(50% - 1rem);
+  }
+}
+
+@media only screen and (min-width: 1020px) {
+  /* line 68, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+  div.heroTeasers .teaser_text_panel_outer {
+    width: 33.333%;
+    width: calc(33.333% - 1rem);
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  /* line 69, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+  div.heroTeasers .teaser_text_panel_outer {
+    width: 25%;
+    width: calc(25% - 1rem);
+  }
+}
+
+/* line 74, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.heroTeasers .teaser_text_panel {
+  padding: 1rem 1rem 7rem 1rem;
+}
+
+/* line 78, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.heroTeasers .teaser_title {
+  margin: 0px;
+  font-weight: 400;
+  color: white;
+  font-size: 2rem;
+  line-height: 1.1em !important;
+}
+
+/* line 87, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.heroTeasers .teaser_title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* line 98, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.heroTeasers .teaser_tags div {
+  display: inline-block;
+}
+
+@media only screen and (max-width: 760px) {
+  /* line 103, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+  div.heroTeasers div.teaser_wrapper {
+    position: static !important;
+    overflow: visible;
+    min-height: 30rem;
+  }
+  /* line 109, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+  div.heroTeasers .teaser_image {
+    position: static !important;
+    transform: none;
+    margin: 0 0.5rem;
+  }
+  /* line 115, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+  div.heroTeasers .teaser_image img {
+    position: static !important;
+    transform: none;
+  }
+  /* line 119, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+  div.heroTeasers .teaser_text_panel_outer {
+    position: static !important;
+    margin: 0 0.5rem;
+    width: auto;
+    padding: 0.5rem;
+  }
+  /* line 126, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+  div.heroTeasers .teaser_tags {
+    margin-bottom: 1rem;
+  }
+  /* line 130, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+  div.heroTeasers .teaser_button {
+    display: block;
+    margin: 0 1rem 3rem 1rem;
+  }
+}
+
+/* line 158, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.largeTeasers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* line 165, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.largeTeasers div.teaser_wrapper {
+  position: relative;
+  overflow: hidden;
+  margin: 0 0 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: stretch;
+}
+
+/* line 177, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.largeTeasers div.teaserPanelBack {
+  display: none;
+}
+
+/* line 181, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.largeTeasers .teaser_image {
+  display: block;
+  position: absolute;
+  top: 0px !important;
+  left: 0.5rem !important;
+  right: 0.5rem !important;
+  height: auto;
+  padding-top: 70%;
+  overflow: hidden;
+}
+
+/* line 194, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.largeTeasers .teaser_image .contextual-region {
+  position: static;
+}
+
+/* line 198, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.largeTeasers .teaser_image img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* line 208, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.largeTeasers .teaser_text_panel_outer {
+  position: relative;
+  flex-grow: 1;
+  background: white;
+  border: 1px solid #ccc;
+  margin: 55% 1.5rem 1rem 1.5rem;
+}
+
+/* line 215, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.largeTeasers .teaser_text_panel {
+  padding: 1rem 1rem 8rem 1rem;
+}
+
+/* line 219, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.largeTeasers .teaser_title {
+  margin: 0px;
+}
+
+/* line 224, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.largeTeasers .teaser_title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* line 235, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.largeTeasers .teaser_tags div {
+  display: inline-block;
+}
+
+/* line 241, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.largeTeasers div.teaser_wrapper.noImage .teaser_text_panel_outer {
+  margin-top: 0px;
+}
+
+/*
+$teaserBorderColor: red;
+$teaserInset: $gutter /2;
+*/
+/* line 260, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.regularTeasers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch !important;
+}
+
+/* line 269, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.regularTeasers div.teaser_wrapper {
+  position: relative;
+  overflow: hidden;
+  margin: 0 0 1rem 0;
+}
+
+/* line 279, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.regularTeasers div.teaserPanelBack {
+  border: 1px solid #ccc;
+  background: white;
+  position: absolute;
+  top: 0px;
+  left: 0.5rem;
+  right: 0.5rem;
+  bottom: 0px;
+}
+
+/* line 290, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.regularTeasers .teaser_image {
+  display: block;
+  position: absolute;
+  z-index: 500;
+  top: 1rem !important;
+  left: 0.5rem !important;
+  margin-left: 1rem;
+  margin-right: 0.5rem;
+  height: 9rem;
+  padding-top: 0;
+  overflow: hidden;
+  width: 9rem;
+}
+
+/* line 307, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.regularTeasers .teaser_title {
+  margin: 0px;
+  margin-left: 9rem;
+  padding-left: 1rem;
+  min-height: 9rem;
+}
+
+/* line 314, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.regularTeasers .teaser_title > a {
+  padding-top: 1rem;
+  display: block;
+}
+
+/* line 320, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.regularTeasers .teaser_image .contextual-region {
+  position: static;
+}
+
+/* line 324, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.regularTeasers .teaser_image img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* line 334, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.regularTeasers .teaser_text_panel_outer {
+  position: relative;
+  flex-grow: 1;
+  margin: 0 1rem 0 1rem;
+  background: transparent;
+  border-style: none;
+}
+
+/* line 342, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.regularTeasers .teaser_text_panel {
+  padding: 0 1rem 1rem 0.5rem;
+}
+
+/* line 348, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.regularTeasers .teaser_title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* line 352, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.regularTeasers .teaser_text {
+  padding-top: 1rem;
+}
+
+/* line 355, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.regularTeasers .teaser_tags {
+  display: none;
+}
+
+/* line 359, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.regularTeasers .teaser_tags div {
+  display: inline-block;
+}
+
+/* line 363, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.regularTeasers .teaser_button {
+  left: 0.5rem;
+  right: 0.5rem;
+  position: static;
+}
+
+/* line 370, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.regularTeasers div.teaser_wrapper.noImage .teaser_image {
+  display: none;
+}
+
+/* line 373, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.regularTeasers div.teaser_wrapper.noImage .teaser_title {
+  margin-left: 0;
+  min-height: 0;
+  padding-left: 0 !important;
+}
+
+/* line 379, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.regularTeasers div.teaser_wrapper.noImage .teaser_title a {
+  padding-left: 0 !important;
+}
+
+/* line 382, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.regularTeasers div.teaser_wrapper.noImage .teaser_text {
+  padding-top: 0;
+}
+
+/* line 404, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.horizontalTeasers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* line 411, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.horizontalTeasers div.teaser_wrapper {
+  position: relative;
+  overflow: hidden;
+  margin: 1rem 0;
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: stretch;
+  min-height: 6rem;
+  padding-bottom: 3rem;
+}
+
+/* line 425, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.horizontalTeasers div.teaserPanelBack {
+  border: 1px solid #ccc;
+  position: absolute;
+  background: white;
+  top: 0px;
+  left: 0.5rem;
+  right: 0.5rem;
+  bottom: 0px;
+}
+
+/* line 437, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.horizontalTeasers .teaser_image {
+  display: block;
+  position: absolute;
+  top: 1rem !important;
+  margin-left: 1rem;
+  left: 0.5rem !important;
+  width: 9rem;
+  margin-right: 0.5rem;
+  padding-top: 0;
+  height: 9rem;
+  overflow: hidden;
+}
+
+/* line 451, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.horizontalTeasers .teaser_title {
+  margin: 0px;
+  margin: 0 1rem;
+}
+
+/* line 456, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.horizontalTeasers .teaser_title > a {
+  padding-top: 1rem;
+  display: block;
+}
+
+/* line 462, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.horizontalTeasers .teaser_image .contextual-region {
+  position: static;
+}
+
+/* line 466, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.horizontalTeasers .teaser_image img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* line 476, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.horizontalTeasers .teaser_text_panel_outer {
+  position: relative;
+  flex-grow: 1;
+  margin: 0;
+  background: transparent;
+  border-style: none;
+  margin-left: 9rem;
+  padding-left: 1rem;
+  min-height: 9rem;
+}
+
+/* line 486, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.horizontalTeasers .teaser_text_panel {
+  padding: 0 1rem 0 0.5rem;
+}
+
+/* line 492, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.horizontalTeasers .teaser_title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* line 496, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.horizontalTeasers .teaser_text {
+  display: none;
+}
+
+/* line 499, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.horizontalTeasers .teaser_tags {
+  display: none;
+}
+
+/* line 503, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.horizontalTeasers .teaser_tags div {
+  display: inline-block;
+}
+
+/* line 507, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.horizontalTeasers .teaser_button {
+  position: static;
+  display: block;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+/* line 516, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.horizontalTeasers div.teaser_wrapper.noImage .teaser_image {
+  display: none;
+}
+
+/* line 519, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.horizontalTeasers div.teaser_wrapper.noImage .teaser_title {
+  min-height: 0;
+  padding-left: 0;
+}
+
+/* line 524, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.horizontalTeasers div.teaser_wrapper.noImage .teaser_text_panel_outer {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/* line 547, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.textTeasers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* line 554, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.textTeasers div.teaser_wrapper {
+  position: relative;
+  overflow: hidden;
+  margin: 1rem 0 2rem 0;
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: stretch;
+}
+
+/* line 565, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.textTeasers .teaserImageLink {
+  display: block;
+}
+
+/* line 570, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.textTeasers .teaser_image {
+  display: none;
+}
+
+/* line 574, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.textTeasers .teaser_title {
+  margin: 0px 0px 0.33333rem 0;
+}
+
+/* line 578, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.textTeasers .teaser_image .contextual-region {
+  position: static;
+}
+
+/* line 582, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.textTeasers .teaser_image img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+/* line 590, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.textTeasers .teaser_text_panel_outer {
+  position: relative;
+  flex-grow: 1;
+  margin: 0;
+  background: transparent;
+  border-style: none;
+  padding-left: 0;
+}
+
+/* line 598, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.textTeasers .teaser_text_panel {
+  padding: 0 1rem 0 0.5rem;
+}
+
+/* line 604, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.textTeasers .teaser_title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* line 608, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.textTeasers .teaser_text, div.textTeasers .teaser_text p {
+  margin: 0px;
+}
+
+/* line 612, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.textTeasers .teaser_tags {
+  display: none;
+}
+
+/* line 616, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.textTeasers .teaser_tags div {
+  display: inline-block;
+}
+
+/* line 620, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.textTeasers .teaser_button {
+  left: 0.5rem;
+  right: 0.5rem;
+  position: static;
+}
+
+/*
+$teaserImageWidthRegular: 8rem;
+$teaserImageHeightRegular: 8rem;
+
+$teaserImageWidthSmall: 5rem;
+$teaserImageHeightSmall: 2rem;
+*/
+/* line 656, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.smallTeasers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start !important;
+}
+
+/* line 664, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.smallTeasers div.teaser_wrapper {
+  position: relative;
+  overflow: hidden;
+  margin: 1rem 0 2rem 0;
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: stretch;
+}
+
+/* line 675, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.smallTeasers .teaserPanelBack {
+  display: none;
+}
+
+/* line 680, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.smallTeasers .teaser_image {
+  display: block;
+  position: absolute;
+  z-index: 500;
+  top: 0px !important;
+  left: 0.5rem !important;
+  margin-right: 0.5rem;
+  padding-top: 0;
+  height: 5rem !important;
+  min-height: 5rem !important;
+  width: 5rem;
+  overflow: hidden;
+}
+
+/* line 697, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.smallTeasers .teaser_title {
+  margin: 0px;
+}
+
+/* line 701, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.smallTeasers .teaser_image .contextual-region {
+  position: static;
+}
+
+/* line 705, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.smallTeasers .teaser_image img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+/* line 713, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.smallTeasers .teaser_text_panel_outer {
+  position: relative;
+  flex-grow: 1;
+  margin: 0;
+  background: transparent;
+  border-style: none;
+  padding-left: 5rem;
+  margin-left: 1rem;
+  min-height: 5rem !important;
+}
+
+/* line 723, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.smallTeasers .teaser_text_panel {
+  padding: 0 1rem 0 0.5rem;
+}
+
+/* line 729, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.smallTeasers .teaser_title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* line 733, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.smallTeasers .teaser_text {
+  display: none;
+}
+
+/* line 736, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.smallTeasers .teaser_tags {
+  display: none;
+}
+
+/* line 740, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.smallTeasers .teaser_tags div {
+  display: inline-block;
+}
+
+/* line 744, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.smallTeasers .teaser_button {
+  position: static;
+  display: block;
+  margin-top: 1rem;
+}
+
+/* line 753, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.smallTeasers div.teaser_wrapper.noImage .teaser_image {
+  display: none;
+}
+
+/* line 756, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.smallTeasers div.teaser_wrapper.noImage .teaser_title {
+  margin-left: 0;
+  min-height: 0;
+  padding-left: 0;
+}
+
+/* line 761, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.smallTeasers div.teaser_wrapper.noImage .teaser_text {
+  padding-top: 0;
+}
+
+/* line 765, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.smallTeasers div.teaser_wrapper.noImage .teaser_text_panel_outer {
+  padding-left: 0;
+}
+
+/* line 803, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+.teaser_text_panel_outer {
+  background: white;
+  border: 1px solid #ccc;
+  color: #999;
+  font-size: 1rem;
+  line-height: 1.4em;
+}
+
+/* line 811, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+.teaser_title {
+  margin: 0px;
+  line-height: 1.2em !important;
+  font-size: 1.25rem;
+  color: #444;
+  font-weight: bold;
+}
+
+/* line 821, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+.teaser_title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* line 826, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+.teaser_text, .teaser_text p {
+  font-size: 1rem;
+  line-height: 1.4em;
+}
+
+/* line 832, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+.teaser_tags div {
+  display: inline-block;
+}
+
+/* line 836, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+.teaser_tags a {
+  background: #FF6600;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  text-decoration: none;
+  border-radius: 0.25rem;
+}
+
+/* line 849, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+.teaser_button {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  line-height: 1.2em;
+  padding: 0;
+  font-weight: bold;
+  color: #009CA9;
+  text-decoration: none;
+  transition: all 0.5s;
+  font-family: "Roboto", serif;
+  border: 2px solid white;
+}
+
+/* line 866, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+.teaser_button:hover {
+  color: #FF6600;
+}
+
+/* line 886, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.heroTeasers .teaser_button, div.largeTeasers .teaser_button {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  height: 4rem;
+  line-height: 4rem;
+  padding: 0 1rem;
+  background: #009CA9;
+  color: white;
+  text-decoration: none;
+  transition: all 0.5s;
+  border-radius: 0.25rem;
+  font-size: 1.2em;
+}
+
+/* line 902, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.heroTeasers .teaser_button:hover, div.largeTeasers .teaser_button:hover {
+  background: #FF6600;
+}
+
+/* line 906, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.heroTeasers .teaser_image, div.largeTeasers .teaser_image {
+  border-radius: 0;
+}
+
+/* line 916, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.regularTeasers .teaser_image, div.horizontalTeasers .teaser_image, div.textTeasers .teaser_image, div.smallTeasers .teaser_image {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* line 920, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.regularTeasers .teaser_button, div.horizontalTeasers .teaser_button, div.textTeasers .teaser_button, div.smallTeasers .teaser_button {
+  border: none;
+}
+
+/* line 928, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.largeTeasers .teaser_image img, div.regularTeasers .teaser_image img, div.horizontalTeasers .teaser_image img {
+  transition: all 0.5s;
+}
+
+/* line 934, ../../../../DevDesktopSite/iema8/themes/redactive/scss/_teasers.scss */
+div.largeTeasers .teaser_wrapper:hover .teaser_image img,
+div.regularTeasers .teaser_wrapper:hover .teaser_image img,
+div.horizontalTeasers .teaser_wrapper:hover .teaser_image img {
+  transform: scale(1.05) translateY(-50%);
+}
+
+/* line 96, ../../../../DevDesktopSite/iema8/themes/redactive/scss/style.scss */
+.noteToSelf {
+  background: #FFcc00;
+  padding: 2rem;
+  font-size: 1.5em;
+  margin: 2rem 0;
+  transform: rotate(-2deg);
+}
+
+/* line 108, ../../../../DevDesktopSite/iema8/themes/redactive/scss/style.scss */
+body, p {
+  font-size: 1rem;
+  line-height: 1.8em;
+}
+
+/* line 113, ../../../../DevDesktopSite/iema8/themes/redactive/scss/style.scss */
+h1 {
+  font-family: "Aleo", serif;
+  font-size: 3.8rem;
+  letter-spacing: -0.01em;
+  font-weight: normal;
+  line-height: 1.1em;
+}
+
+/* line 121, ../../../../DevDesktopSite/iema8/themes/redactive/scss/style.scss */
+h2 {
+  font-family: "Aleo", serif;
+  font-size: 2.6rem;
+  letter-spacing: -0.01em;
+  font-weight: normal;
+  line-height: 1.1em;
+}
+
+/* line 129, ../../../../DevDesktopSite/iema8/themes/redactive/scss/style.scss */
+h3 {
+  font-family: "Aleo", serif;
+  font-size: 1.5rem;
+  letter-spacing: -0.01em;
+  font-weight: bold;
+  line-height: 1.1em;
+}
+
+/* line 138, ../../../../DevDesktopSite/iema8/themes/redactive/scss/style.scss */
+h4 {
+  font-family: "Aleo", serif;
+  font-size: 1.2rem;
+  letter-spacing: -0.01em;
+  font-weight: bold;
+  line-height: 1.1em;
+}
+
+/* line 146, ../../../../DevDesktopSite/iema8/themes/redactive/scss/style.scss */
+body {
+  font-family: "Roboto", sans-serif;
+  background: #ebebeb;
+}
+
+/* line 151, ../../../../DevDesktopSite/iema8/themes/redactive/scss/style.scss */
+h1, h2, h3, h4, h5 {
+  font-family: "Aleo", serif;
+}
+
+/* line 155, ../../../../DevDesktopSite/iema8/themes/redactive/scss/style.scss */
+a {
+  color: #009CA9;
+}
+
+/*# sourceMappingURL=style.css.map */

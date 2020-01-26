@@ -1,0 +1,38 @@
+name: iemaradix
+description: A theme based on Radix.
+screenshot: screenshot.png
+core: 8.x
+version: VERSION
+engine: twig
+type: theme
+base theme: radix
+
+
+regions:
+  pre_header: Pre Header
+  masthead_left: Masthead Left
+  masthead_centre: Masthead Centre
+  masthead_right: Masthead Right
+  navigation: Navigation
+  breadcrumb: Breadcrumb
+  pre_content: Pre Content
+  content: Content
+  sidebar: Sidebar
+  pre_footer: Pre Footer
+  footer: Footer
+  dump: Dump Region
+
+libraries:
+  - radix/style
+  - iemaradix/style
+
+libraries-override:
+  radix/bootstrap: false
+
+ckeditor_stylesheets:
+  - assets/css/iemaradix.style.css
+
+component-libraries:
+  iemaradix:
+    paths:
+      - ./src/components

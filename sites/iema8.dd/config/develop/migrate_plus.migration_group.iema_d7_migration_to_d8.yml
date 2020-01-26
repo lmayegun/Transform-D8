@@ -1,0 +1,12 @@
+uuid: f00c95ae-abf8-4423-a811-a70de33a33f9
+langcode: en
+status: true
+dependencies: {  }
+id: iema_d7_migration_to_d8
+label: 'IEMA D7 Migration To D8'
+description: 'Migrating Iema drupal 7 site to drupal 8'
+source_type: 'Drupal 7'
+module: null
+shared_configuration:
+  source:
+    key: legacy

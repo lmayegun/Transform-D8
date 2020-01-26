@@ -1,0 +1,19 @@
+uuid: 9b7eca3f-d857-4363-90af-ee87749d867d
+langcode: en
+status: true
+dependencies: {  }
+id: marketing
+label: marketing
+weight: 10
+is_admin: null
+permissions:
+  - 'admin webform remote posts'
+  - 'administer DFP'
+  - 'cancel own vote'
+  - 'edit meta tags'
+  - 'edit webform components'
+  - 'inspect all votes'
+  - 'use advanced search'
+  - 'use text format full_html'
+  - 'use text format ln_core'
+  - 'view the administration theme'

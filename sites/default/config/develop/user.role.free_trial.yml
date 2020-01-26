@@ -1,0 +1,9 @@
+uuid: 786a3301-ec63-4b21-9807-61bfe759fb80
+langcode: en
+status: true
+dependencies: {  }
+id: free_trial
+label: 'free trial'
+weight: 9
+is_admin: null
+permissions: {  }

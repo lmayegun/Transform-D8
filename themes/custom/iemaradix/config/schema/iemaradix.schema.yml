@@ -1,0 +1,5 @@
+# Schema for the configuration files of the iemaradix theme.
+
+iemaradix.settings:
+  type: theme_settings
+  label: 'iemaradix settings'

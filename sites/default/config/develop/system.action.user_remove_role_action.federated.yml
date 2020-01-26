@@ -1,0 +1,14 @@
+uuid: 7bf71b6b-8e23-4b74-a391-f9ce395a1241
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.federated
+  module:
+    - user
+id: user_remove_role_action.federated
+label: 'Remove the federated role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: federated

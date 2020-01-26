@@ -1,0 +1,14 @@
+uuid: 22388eb9-3ac5-49ad-8fdb-abd4dfaf0e3d
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.ip_auth
+  module:
+    - user
+id: user_add_role_action.ip_auth
+label: 'Add the ip auth role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: ip_auth

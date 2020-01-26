@@ -1,0 +1,666 @@
+
+
+// heroTeasers ======================================================================================
+
+
+
+div.heroTeasers {
+  div.teaser_wrapper{
+    position: relative;
+    overflow: hidden;
+    // padding-top: 35%;
+    min-height: 30rem;
+    margin: $gutter ($gutter / 2);
+  }
+
+  .teaser_image  {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: $gutter;
+  }
+
+  .teaser_image .contextual-region {
+    position: static;
+  }
+
+  .teaser_image img {
+    width: 100%;
+    display: block;
+    height: auto;
+    position: absolute;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .teaser_text_panel_outer {
+    position: absolute;
+    background: $heroPanelTextback;
+    color: $heroPanelTextColor;
+    // top: $gutter;
+    right: 0;
+    bottom: $gutter;
+    left: 66%;
+    margin-left: $gutter /2;
+  }
+  .teaser_text_panel {
+    padding: $gutter $gutter ($buttonHeight + (3 *$gutter)) $gutter;
+    // box-shadow: 0.05rem 0.125rem 0.7rem rgba(0,0,0,0.2);
+  }
+  .teaser_title {
+    margin: 0px;
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+
+  .teaser_title a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .teaser_text {
+
+  }
+  .teaser_tags {
+
+  }
+
+  .teaser_tags  div {
+    display: inline-block;
+  }
+}
+
+// largeTeasers ======================================================================================
+div.largeTeasers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  div.teaser_wrapper{
+    position: relative;
+    overflow: hidden;
+    margin: 0 0 $gutter 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: stretch;
+    width: 33.333%;
+    flex-basis: 33.333%;
+    flex-shrink: 0;
+  }
+
+  .teaser_image  {
+    display: block;
+    position: absolute;
+    // width: 100%;
+    top: 0px !important;
+    left: $gutter /2 !important;
+    right: $gutter /2 !important;
+    height: auto;
+    padding-top: 60%;
+    overflow: hidden;
+  }
+
+  .teaser_image .contextual-region {
+    position: static;
+  }
+
+  .teaser_image img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .teaser_text_panel_outer {
+    position: relative;
+    flex-grow: 1;
+    background: white;
+    border: 1px solid #ccc;
+    margin: 45% ($gutter * 1.5) $gutter ($gutter * 1.5);
+  }
+  .teaser_text_panel {
+    padding: $gutter $gutter ($buttonHeight + (4 *$gutter)) $gutter;
+    // box-shadow: 0.05rem 0.125rem 0.7rem rgba(0,0,0,0.2);
+  }
+  .teaser_title {
+    margin: 0px;
+    // color: $highlightColor;
+  }
+
+  .teaser_title a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .teaser_text {
+
+  }
+  .teaser_tags {
+
+  }
+
+  .teaser_tags  div {
+    display: inline-block;
+  }
+}
+
+// regularTeasers ======================================================================================
+div.regularTeasers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start !important;
+
+
+  div.teaser_wrapper{
+    position: relative;
+    overflow: hidden;
+    margin: 0  0 (2 * $gutter) 0;
+    //display: flex;
+    //flex-direction: column;
+    //align-items: stretch;
+    //justify-content: stretch;
+    width: 33.333%;
+    flex-basis: 33.333%;
+    flex-shrink: 0;
+  }
+
+
+  .teaser_image  {
+    display: block;
+    position: absolute;
+    // width: 100%;
+    top: 0px !important;
+    left: $gutter /2 !important;
+    right: 50% !important;
+    margin-right: $gutter / 2;
+    height: auto;
+    padding-top: 0;
+    height: 7rem;
+    overflow: hidden;
+  }
+
+  .teaser_title {
+    margin: 0px;
+    margin-left: 50%;
+    padding-left: $gutter;
+    min-height: 7rem;
+  }
+
+  .teaser_image .contextual-region {
+    position: static;
+  }
+
+  .teaser_image img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .teaser_text_panel_outer {
+    position: relative;
+    flex-grow: 1;
+    margin: 0 $gutter 0 0;
+    background: transparent;
+    border-style: none;
+  }
+  .teaser_text_panel {
+    padding: 0 $gutter 3rem ($gutter / 2);
+    // box-shadow: 0.05rem 0.125rem 0.7rem rgba(0,0,0,0.2);
+  }
+  .teaser_title a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .teaser_text {
+
+  }
+  .teaser_tags {
+    display: none;
+  }
+
+  .teaser_tags  div {
+    display: inline-block;
+  }
+
+  .teaser_button {
+    left: $gutter / 2;
+    right: $gutter / 2;
+    position: static;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// horizontalTeasers ======================================================================================
+
+
+div.horizontalTeasers {
+
+
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+
+    div.teaser_wrapper{
+        position: relative;
+        overflow: hidden;
+        margin: $gutter  0 ($gutter * 2) 0;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: stretch;
+        width: 50%;
+        flex-basis: 50%;
+        flex-shrink: 0;
+        min-height: 8rem;
+
+    }
+
+
+    .teaser_image  {
+        display: block;
+        position: absolute;
+        // width: 100%;
+        top: 0px !important;
+        left: $gutter /2 !important;
+        width: 9rem;
+        margin-right: $gutter / 2;
+        height: auto;
+        padding-top: 0;
+        height: 7rem;
+        overflow: hidden;
+    }
+
+    .teaser_title {
+        margin: 0px;
+    }
+
+    .teaser_image .contextual-region {
+        position: static;
+    }
+
+    .teaser_image img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        left: 0;
+        right: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .teaser_text_panel_outer {
+        position: relative;
+        flex-grow: 1;
+        margin: 0;
+        background: transparent;
+        border-style: none;
+        margin-left: 9rem;
+        padding-left: $gutter;
+    }
+    .teaser_text_panel {
+        padding: 0 $gutter 0 ($gutter / 2);
+        // box-shadow: 0.05rem 0.125rem 0.7rem rgba(0,0,0,0.2);
+    }
+
+
+    .teaser_title a {
+        color: inherit;
+        text-decoration: none;
+    }
+    .teaser_text {
+        display: none;
+    }
+    .teaser_tags {
+        display: none;
+    }
+
+    .teaser_tags  div {
+        display: inline-block;
+    }
+
+    .teaser_button {
+        position: static;
+        display: block;
+        margin-top: $gutter;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+// textTeasers ======================================================================================
+
+
+div.textTeasers {
+
+
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+
+    div.teaser_wrapper{
+        position: relative;
+        overflow: hidden;
+        margin: $gutter  0 ($gutter * 2) 0;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: stretch;
+        width: 33.333%;
+        flex-basis: 33.333%;
+        flex-shrink: 0;
+
+    }
+
+
+    .teaser_image  {
+        display: none;
+    }
+
+    .teaser_title {
+        margin: 0px;
+    }
+
+    .teaser_image .contextual-region {
+        position: static;
+    }
+
+    .teaser_image img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    .teaser_text_panel_outer {
+        position: relative;
+        flex-grow: 1;
+        margin: 0;
+        background: transparent;
+        border-style: none;
+        padding-left: 0;
+        padding-bottom: 3rem;
+    }
+    .teaser_text_panel {
+        padding: 0 $gutter 0 ($gutter / 2);
+        // box-shadow: 0.05rem 0.125rem 0.7rem rgba(0,0,0,0.2);
+    }
+
+
+    .teaser_title a {
+        color: inherit;
+        text-decoration: none;
+    }
+    .teaser_text {
+        // display: none;
+    }
+    .teaser_tags {
+        display: none;
+    }
+
+    .teaser_tags  div {
+        display: inline-block;
+    }
+
+    .teaser_button {
+        left: $gutter / 2;
+        right: $gutter / 2;
+        position: static;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// smallTeasers ======================================================================================
+
+
+div.smallTeasers {
+
+
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+
+    div.teaser_wrapper{
+        position: relative;
+        overflow: hidden;
+        margin: $gutter  0 ($gutter * 2) 0;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: stretch;
+        width: 33.333%;
+        flex-basis: 33.333%;
+        flex-shrink: 0;
+
+    }
+
+
+    .teaser_image  {
+        display: block;
+        position: absolute;
+        // width: 100%;
+        top: 0px !important;
+        left: $gutter /2 !important;
+        right: 70% !important;
+        margin-right: $gutter / 2;
+        height: auto;
+        padding-top: 0;
+        height: 7rem;
+        overflow: hidden;
+    }
+
+    .teaser_title {
+        margin: 0px;
+    }
+
+    .teaser_image .contextual-region {
+        position: static;
+    }
+
+    .teaser_image img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    .teaser_text_panel_outer {
+        position: relative;
+        flex-grow: 1;
+        margin: 0;
+        background: transparent;
+        border-style: none;
+        padding-left: 30%;
+    }
+    .teaser_text_panel {
+        padding: 0 $gutter 0 ($gutter / 2);
+        // box-shadow: 0.05rem 0.125rem 0.7rem rgba(0,0,0,0.2);
+    }
+
+
+    .teaser_title a {
+        color: inherit;
+        text-decoration: none;
+    }
+    .teaser_text {
+        display: none;
+    }
+    .teaser_tags {
+        display: none;
+    }
+
+    .teaser_tags  div {
+        display: inline-block;
+    }
+
+    .teaser_button {
+        position: static;
+        display: block;
+        margin-top: $gutter;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// teaser styles ------------------------------------------------
+
+
+
+
+.teaser_text_panel_outer {
+background: white;
+border: 1px solid #ccc;
+}
+
+.teaser_title {
+margin: 0px;
+line-height: 1.3em !important;
+font-size: 1.3rem;
+}
+
+.teaser_title a {
+color: inherit;
+text-decoration: none;
+}
+
+
+.teaser_tags  div {
+display: inline-block;
+}
+
+.teaser_tags a {
+background: $highlightColor;
+color: white;
+padding: 0.25rem 0.5rem;
+text-decoration: none;
+border-radius: 0.25rem;
+}
+
+
+.teaser_image img {
+
+}
+
+
+
+.teaser_button {
+position: absolute;
+bottom: $gutter;
+left: $gutter;
+right: $gutter;
+line-height: 1.2em;
+padding: 0;
+font-weight: bold;
+font-size: 1.2em;
+color: $buttonColor;
+// color: $buttonTextColor;
+text-decoration: none;
+transition: all $buttonTransitionTime;
+font-family: $fontStackUI;
+}
+
+.teaser_button:hover {
+color: $linkHoverColor;
+}
+
+
+
+
+
+.teaser_text, .teaser_text p {
+line-height: 1.4em !important;
+}
+
+
+
+
+
+div.heroTeasers, div.largeTeasers {
+
+.teaser_button {
+position: absolute;
+bottom: $gutter;
+left: $gutter;
+right: $gutter;
+height: $buttonHeight;
+line-height: $buttonHeight;
+padding: 0 $gutter;
+background: $buttonColor;
+color: $buttonTextColor;
+text-decoration: none;
+transition: all $buttonTransitionTime;
+border-radius: 0.25rem;
+}
+
+.teaser_button:hover {
+background: $buttonHoverColor;
+}
+
+
+}

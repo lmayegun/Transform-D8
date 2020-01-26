@@ -1,0 +1,9 @@
+uuid: 16d677a5-acf2-45e1-b82c-8604fe8cf992
+langcode: en
+status: true
+dependencies: {  }
+id: registered
+label: registered
+weight: 6
+is_admin: null
+permissions: {  }

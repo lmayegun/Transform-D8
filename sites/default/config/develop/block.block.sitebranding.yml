@@ -1,0 +1,23 @@
+uuid: 42dc614b-7ec2-47cb-b449-f49ee4bd3467
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - iemaradix
+id: sitebranding
+theme: iemaradix
+region: masthead_centre
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

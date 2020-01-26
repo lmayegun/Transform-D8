@@ -1,0 +1,21 @@
+uuid: 629e2468-2c95-4a73-a1d0-6eeca23c0c88
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ck_standfirst
+    - node.type.article
+  module:
+    - text
+id: node.article.field_ck_standfirst
+field_name: field_ck_standfirst
+entity_type: node
+bundle: article
+label: 'CK Standfirst'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

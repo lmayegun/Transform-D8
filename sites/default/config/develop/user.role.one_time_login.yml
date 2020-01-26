@@ -1,0 +1,9 @@
+uuid: e3f79e0d-30a1-4b91-9d7f-e641192708d2
+langcode: en
+status: true
+dependencies: {  }
+id: one_time_login
+label: 'one time login'
+weight: 5
+is_admin: null
+permissions: {  }

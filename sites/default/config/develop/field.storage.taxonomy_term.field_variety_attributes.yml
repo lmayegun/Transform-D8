@@ -1,0 +1,23 @@
+uuid: 2f0f25e7-1da3-45ec-a037-c588bf77bce5
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+_core:
+  default_config_hash: sfP27J9-TcVbjBJviBOAkXgwSpQe1DoGxCc5Ysz_8rc
+id: taxonomy_term.field_variety_attributes
+field_name: field_variety_attributes
+entity_type: taxonomy_term
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

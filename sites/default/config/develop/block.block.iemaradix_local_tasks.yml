@@ -1,0 +1,22 @@
+uuid: ed9530ab-db8c-436d-97ce-a2a403098e70
+langcode: en
+status: true
+dependencies:
+  theme:
+    - iemaradix
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: iemaradix_local_tasks
+theme: iemaradix
+region: content
+weight: -5
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

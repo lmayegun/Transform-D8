@@ -1,0 +1,30 @@
+
+
+
+#block-tabs > ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+#block-tabs > ul li {
+    flex-grow: 1;
+    flex-basis: 1;
+}
+
+#block-tabs > ul li a {
+    display: block;
+    color: white !important;
+    padding: $gutter /2;
+    background: $linkColor;
+    color: white;
+    margin: 1rem 2px 1rem 0;
+    text-align: center;
+}
+
+#block-tabs > ul li a.is-active {
+    background: $highlightColor;
+}

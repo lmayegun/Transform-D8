@@ -1,0 +1,14 @@
+uuid: fc46604e-3688-4a35-8f92-9e9e3a07287f
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.temp_fcf
+  module:
+    - user
+id: user_remove_role_action.temp_fcf
+label: 'Remove the temp fcf role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: temp_fcf

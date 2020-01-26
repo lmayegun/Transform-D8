@@ -1,0 +1,22 @@
+uuid: 6e8bf044-f464-4eb2-af94-636d991605bc
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - redactive
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: redactive_content
+theme: redactive
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

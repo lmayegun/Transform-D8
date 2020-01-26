@@ -1,0 +1,14 @@
+uuid: 7dac9945-e82d-4c89-9c1b-7eea88b2eeb2
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.ip_auth
+  module:
+    - user
+id: user_remove_role_action.ip_auth
+label: 'Remove the ip auth role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: ip_auth

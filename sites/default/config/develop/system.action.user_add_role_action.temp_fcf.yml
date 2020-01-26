@@ -1,0 +1,14 @@
+uuid: 02fac061-ec3e-4bfa-b837-9eb754692a5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.temp_fcf
+  module:
+    - user
+id: user_add_role_action.temp_fcf
+label: 'Add the temp fcf role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: temp_fcf

@@ -1,0 +1,9 @@
+uuid: f081af45-2916-4873-b912-ba5213d0da2d
+langcode: en
+status: true
+dependencies: {  }
+id: ip_auth
+label: 'ip auth'
+weight: 11
+is_admin: null
+permissions: {  }

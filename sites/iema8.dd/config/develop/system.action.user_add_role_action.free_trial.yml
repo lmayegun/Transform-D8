@@ -1,0 +1,14 @@
+uuid: a736a28c-8f61-4ade-bbdf-ad0857528e90
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.free_trial
+  module:
+    - user
+id: user_add_role_action.free_trial
+label: 'Add the free trial role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: free_trial

@@ -1,0 +1,22 @@
+uuid: b5608205-c14c-4eba-9753-7bbd5d744a69
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - redactive
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: redactive_messages
+theme: redactive
+region: pre_header
+weight: -4
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

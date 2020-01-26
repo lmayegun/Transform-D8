@@ -1,0 +1,7 @@
+block.settings.iema_image_block_pid:
+  type: block_settings
+  label: 'IEMA Image Block block'
+  mapping:
+    foo:
+      type: string
+      label: Foo

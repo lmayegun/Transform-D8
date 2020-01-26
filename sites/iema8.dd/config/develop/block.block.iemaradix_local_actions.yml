@@ -1,0 +1,20 @@
+uuid: 4dc97fac-55d7-44c5-a4c7-ba81f4c845a0
+langcode: en
+status: true
+dependencies:
+  theme:
+    - iemaradix
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: iemaradix_local_actions
+theme: iemaradix
+region: content
+weight: -4
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

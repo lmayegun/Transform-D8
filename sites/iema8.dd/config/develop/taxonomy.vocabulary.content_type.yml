@@ -1,0 +1,8 @@
+uuid: e4aaadfc-5978-48a3-a054-6871f8ceff96
+langcode: en
+status: true
+dependencies: {  }
+name: 'Content type'
+vid: content_type
+description: 'content_type vocabulary'
+weight: 0

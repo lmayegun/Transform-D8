@@ -1,0 +1,14 @@
+uuid: b89b721e-365d-487d-8936-652581ee4d6c
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.federated
+  module:
+    - user
+id: user_add_role_action.federated
+label: 'Add the federated role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: federated

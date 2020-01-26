@@ -1,0 +1,26 @@
+name: redactive
+description: Redactive D8 base theme
+type: theme
+core: 8.x
+libraries:
+  - redactive/global-css
+  - redactive/global-js
+ckeditor_stylesheets:
+  - css/base/elements.css
+  - css/components/captions.css
+  - css/components/table.css
+  - css/components/text-formatted.css
+regions:
+  pre_header: 'Pre header'
+  masthead_left: 'Masthead left'
+  masthead_centre: 'Masthead centre'
+  masthead_right: 'Masthead right'
+  navigation: 'Navigation'
+  breadcrumb: Breadcrumb
+  pre_content: 'Pre content'
+  content: Content
+  post_content: 'Post content'
+  sidebar: Sidebar
+  page_end_call_to_actions: 'Page end call to actions'
+  footer: Footer
+  post_footer: 'Post footer'

@@ -1,0 +1,10 @@
+style:
+  version: VERSION
+  css:
+    theme:
+      assets/css/iemaradix.style.css: {}
+  js:
+    assets/js/iemaradix.script.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal

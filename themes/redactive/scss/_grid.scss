@@ -1,0 +1,201 @@
+// =============================================================================================
+// MASTHEAD ====================================================================================
+// =============================================================================================
+#pre_masthead {
+    text-align: center;
+}
+
+#masthead {
+    display: flex !important;
+    flex-direction: row;
+}
+
+#masthead_left, #masthead_right {
+    width: $mastheadSideregionWidths;
+    flex-grow: 0;
+}
+
+#masthead_centre {
+    flex-grow: 1;
+}
+
+// =============================================================================================
+// PAGE LAYOUTS ================================================================================
+// =============================================================================================
+article#content, #main_content  {
+  flex-direction: column !important;
+  display: block !important;
+}
+
+@media only screen and (min-width: $breakpointDesktop) {
+  article#content, #main_content {
+    display: flex !important;
+    flex-direction: row !important;
+  }
+}
+
+#main_content {
+    display: flex;
+    flex-direction: row;
+}
+
+// =============================================================================================
+// COLUMN LAYOUTS ==============================================================================
+// =============================================================================================
+
+// defaults ------------------------------------------------------------------------------------
+
+.page-wrapper{
+  background: $white;
+}
+
+#pageWrapper {
+    width: 100%;
+    max-width: $maxPageWidth !important;
+    margin: 0 auto;
+    padding: $gutter / 2;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0px !important;
+}
+.row.fullWidth {
+    width: 100%;
+}
+
+
+.row .column { width: 100%; }
+.row .column.double	{ width: 100%; }
+.sidebar { width: 100%; }
+.column_inner { width: $gutter / 2; }
+
+.column {
+        flex-shrink: 0;
+        width: 100%;
+        flex-basis: 100%;
+}
+
+article#content {
+    width: 100%;
+    flex-basis: 100%;
+    flex-shrink: 0;
+}
+#content_sidebar { width: 100%; flex-basis: 100%; flex-shrink: 0}
+
+#content_sidebar > * {
+    margin: $gutter / 2;
+    // background: rgba(0,0,0,0.1);
+}
+
+
+
+
+
+
+// min-width: tablet ------------------------------------------------------------------------------------
+
+@media only screen and (min-width: $breakpointTablet) {
+	.row { width: 100%; flex-basis: 100%;}
+	.row .column { width: 50%; flex-basis: 50%;}
+	.row .column.double { width: 100%; flex-basis: 100%;}
+    .sidebar { width: 100%; flex-basis: 100% !important;}
+    #content_sidebar { width: 100% !important; flex-basis: 100% !important;}
+
+	// no need for sidebar variants as sidebar stacks under content
+}
+
+// min-width: desktop ------------------------------------------------------------------------------------
+
+@media only screen and (min-width: $breakpointDesktop) {
+	.row { width: 100%; }
+	.row .column { width: 33.333%; flex-basis: 33.333%;}
+	.row .column.double { width: 50%; flex-basis: 50%;}
+    .sidebar { width: 33.333%; flex-basis: 33.333%;}
+    .row.fullWidth .column { width: 33.333%; flex-basis: 33.333%;}
+    .row.fullWidth .column.double { width: 50%; flex-basis: 50%;}
+    #content_sidebar { width: 33.333% !important; flex-basis: 33.333% !important;}
+
+	.hasSidebar {
+		.sidebar { width: 33.333%; flex-basis: 33.333%; }
+		.row .column { width: 50%; flex-basis: 50%;}
+        .row .column.double { width: 100%; flex-basis: 100%;}
+        .row.fullWidth .column { width: 33.333%; flex-basis: 33.333%;}
+        .row.fullWidth .column.double { width: 50%; flex-basis: 50%;}
+        article#content { width: 66.666%; flex-basis: 66.666%; flex-shrink: 0; }
+    }
+  .container{
+    width: 1260px;
+    margin: auto;
+  }
+}
+
+// min-width: widescreen ------------------------------------------------------------------------------------
+@media only screen and (min-width: $breakpointWidescreen) {
+	.row { width: 100%; flex-basis: 100%;}
+	.row .column { width: 25%; flex-basis: 25%;}
+    .row .column.double { width: 50%; flex-basis: 50%;}
+    .row.fullWidth .column { width: 25%; flex-basis: 25%;}
+	.row.fullWidth .column.double { width: 50%; flex-basis: 50%;}
+    .sidebar { width: 25%; flex-basis: 25%;}
+    #content_sidebar { width: 25% !important; flex-basis: 25% !important;}
+
+	.hasSidebar {
+		.sidebar { width: 25%; flex-basis: 25%;}
+		.row .column { width: 33.333%; flex-basis: 33.333%;}
+        .row .column.double { width: 50%; flex-basis: 50%;}
+        .row.fullWidth .column { width: 25%; flex-basis: 25%;}
+        .row.fullWidth .column.double { width: 50%; flex-basis: 50%;}
+        article#content { width: 75%; flex-basis: 75%; flex-shrink: 0; }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// =============================================================================================
+// FOOTER ======================================================================================
+// =============================================================================================
+
+
+#page_footer {
+    padding: 0 ($gutter / 2);
+}
+
+#page_footer > div {
+    padding: $gutter;
+    background: #666;
+    color: white;
+    display: flex !important;
+    flex-direction: row;
+}
+
+#page_footer > div > div {
+    width: 100%;
+}
+
+#post_footer {
+    margin: 0 ($gutter / 2);
+    background: #222;
+    color: white;
+    padding: $gutter;
+}

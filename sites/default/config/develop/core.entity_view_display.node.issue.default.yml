@@ -1,0 +1,28 @@
+uuid: b0e62539-b002-42a3-8852-2136073303b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.issue.body
+    - node.type.issue
+  module:
+    - text
+    - user
+id: node.issue.default
+targetEntityType: node
+bundle: issue
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

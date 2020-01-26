@@ -1,0 +1,38 @@
+uuid: ded7dc90-9354-427f-9889-f090ecf87b1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_article_hero_image
+    - node.type.article
+  module:
+    - image
+id: node.article.field_article_hero_image
+field_name: field_article_hero_image
+entity_type: node
+bundle: article
+label: 'Article Hero Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ffebf2f5-4e9b-4f45-8d67-fbc500c2c411
+    alt: ''
+    title: ''
+    width: 700
+    height: 400
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

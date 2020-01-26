@@ -1,0 +1,9 @@
+uuid: ce89e8c2-a123-4004-8873-e54743235a90
+langcode: en
+status: true
+dependencies: {  }
+id: subscriber
+label: subscriber
+weight: 8
+is_admin: null
+permissions: {  }

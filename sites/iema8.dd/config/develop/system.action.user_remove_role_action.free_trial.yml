@@ -1,0 +1,14 @@
+uuid: be7c7629-c6f5-4549-ab5f-ff08b88be828
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.free_trial
+  module:
+    - user
+id: user_remove_role_action.free_trial
+label: 'Remove the free trial role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: free_trial

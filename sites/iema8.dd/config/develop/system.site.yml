@@ -1,0 +1,14 @@
+uuid: 996da575-38d4-49f8-a244-0c4aafe2fe74
+name: iema8
+mail: lmayegun@yahoo.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/7020
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE

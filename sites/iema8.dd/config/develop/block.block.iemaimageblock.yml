@@ -1,0 +1,21 @@
+uuid: 1a8b8e14-c103-4a35-ace6-d855c840de8d
+langcode: en
+status: true
+dependencies:
+  module:
+    - iema_image_block
+  theme:
+    - iemaradix
+id: iemaimageblock
+theme: iemaradix
+region: masthead_left
+weight: 0
+provider: null
+plugin: iema_image_block_pid
+settings:
+  id: iema_image_block_pid
+  label: 'IEMA Image Block'
+  provider: iema_image_block
+  label_display: '0'
+  foo: 'Hello world!'
+visibility: {  }

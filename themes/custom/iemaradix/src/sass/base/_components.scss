@@ -1,0 +1,53 @@
+.jumbotron{
+  display: inline-block;
+  flex-direction: row;
+}
+
+.teaser{
+  position: relative;
+  padding-bottom: 27px;
+
+  .teaser-img{
+    display: table-cell;
+    vertical-align: top;
+
+    img.img-fluid {
+      max-width: 200px;
+    }
+  }
+
+  .teaser-content{
+    display: table-cell;
+    vertical-align: top;
+
+    h3{
+      font: 18px 'MuseoSlab-700',Helvetica,Arial,sans-serif;
+      color: #000;
+      margin-bottom: 5px;
+    }
+
+    p{
+      font-size: 12px;
+      margin-bottom: 16px;
+    }
+
+    .type-text{
+      font: 12px 'MuseoSans-700',Helvetica,Arial,sans-serif;
+    }
+
+    .date-text{
+      padding: 10px 0;
+      color: #474747;
+      font: 12px 'MuseoSans-700',Helvetica,Arial,sans-serif;
+    }
+  }
+}
+
+.title-seperator{
+  h2{
+    border-bottom: 2px solid #000;
+    padding-bottom: 13px;
+    font-family: 'MuseoSlab-300',Helvetica,Arial,sans-serif;
+    font-size: 50px;
+  }
+}

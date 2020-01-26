@@ -1,0 +1,14 @@
+uuid: 65b26f56-b943-49fc-9185-b9389affa1b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.one_time_login
+  module:
+    - user
+id: user_remove_role_action.one_time_login
+label: 'Remove the one time login role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: one_time_login

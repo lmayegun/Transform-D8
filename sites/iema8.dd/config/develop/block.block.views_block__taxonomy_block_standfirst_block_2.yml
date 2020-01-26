@@ -1,0 +1,24 @@
+uuid: 725f8bc4-ed33-448b-8b75-8aa0daeee072
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.taxonomy_block_standfirst
+  module:
+    - views
+  theme:
+    - iemaradix
+id: views_block__taxonomy_block_standfirst_block_2
+theme: iemaradix
+region: dump
+weight: 0
+provider: null
+plugin: 'views_block:taxonomy_block_standfirst-block_2'
+settings:
+  id: 'views_block:taxonomy_block_standfirst-block_2'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

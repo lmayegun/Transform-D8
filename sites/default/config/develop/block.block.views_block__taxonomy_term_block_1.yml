@@ -1,0 +1,24 @@
+uuid: e3428a23-8b9d-4b87-bfc4-e0292b57d608
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.taxonomy_term
+  module:
+    - views
+  theme:
+    - iemaradix
+id: views_block__taxonomy_term_block_1
+theme: iemaradix
+region: dump
+weight: -8
+provider: null
+plugin: 'views_block:taxonomy_term-block_1'
+settings:
+  id: 'views_block:taxonomy_term-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }
